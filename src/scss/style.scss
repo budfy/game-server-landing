@@ -60,12 +60,17 @@
 
 //STYLES-SECTION: top
 .top {
-  margin-top: 100px;
   position: relative;
   min-height: calc(100vh - 96px);
   overflow: hidden;
   text-align: center;
-  padding-bottom: 120px;
+
+  & .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 96px);
+  }
 
   &__title {
     font-family: Notable;
@@ -74,12 +79,13 @@
     text-align: center;
     letter-spacing: 0.1em;
     color: var(--yellow-2);
-    margin-top: 21px;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 
   &__timer {
-    max-width: 565px;
-    margin: 0 auto;
+    width: 40%;
+    margin: auto;
     font-family: Notable;
     font-size: 48px;
     line-height: 62px;
@@ -91,13 +97,15 @@
     font-family: Noto Sans;
     font-weight: 800;
     font-size: 72px;
-    line-height: 98px;
     color: var(--yellow-2);
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
   &__subtitle-row {
     display: block;
     margin-top: 20px;
+    margin-bottom: 0;
 
     &--bottom {
       font-weight: 700;
@@ -110,11 +118,13 @@
     font-size: 36px;
     line-height: 49px;
     color: #B9B8A2;
-    margin-top: 10px;
+    margin-top: auto;
   }
 
   &__buttons-wrapper {
     margin-top: 40px;
+    width: 100%;
+    margin-bottom: auto;
   }
 
   &__button {
@@ -122,9 +132,25 @@
   }
 
   &__switchers-wrapper {
-    margin-top: 5%;
-    margin-bottom: 2%;
+    width: 100%;
+    padding-bottom: 5%;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100vw;
+      height: 120%;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      opacity: 0.8;
+      z-index: 0;
+      background-color: #000000;
+    }
   }
+
+
 
   &__tab-switcher {
     font-family: Roboto;
@@ -225,6 +251,8 @@
 }
 
 //!STYLES-SECTION
+
+//Anchor
 
 //STYLES-SECTION: download
 .download {
@@ -616,7 +644,9 @@
 
 //STYLES-SECTION: footer
 .footer {
-  margin: 50px 0;
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
 }
 
 //!STYLES-SECTION

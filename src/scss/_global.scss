@@ -21,7 +21,7 @@ html {
 
 html,
 body {
-  height: 100%;
+  height: auto;
   position: relative;
 }
 
@@ -38,10 +38,20 @@ input:focus {
   outline: transparent;
 }
 
+.main {
+  position: relative;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.content-wrapper {
+  position: relative;
+  height: auto;
+  padding-top: 96px;
 }
 
 .container {
@@ -128,7 +138,6 @@ input:focus {
   }
 }
 
-
 .green-btn {
   font-family: "Roboto Condensed";
   font-style: normal;
@@ -178,12 +187,11 @@ input:focus {
 
 .video-bg {
   position: fixed;
-  width: 120vw;
-  height: 110vh;
-  object-fit: cover;
-  z-index: -1;
-  left: 50%;
-  transform: translate(-50%, -5%);
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  left: 0;
+  top: 0;
 
   &__image {
     position: absolute;
@@ -192,8 +200,9 @@ input:focus {
     top: 0;
     left: 0;
     object-fit: cover;
-    opacity: 0.5;
-    z-index: -1;
+    opacity: 0.6;
+    z-index: -2;
+    background-color: #000000;
   }
 
   &__video {
@@ -203,8 +212,20 @@ input:focus {
     top: 0;
     left: 0;
     object-fit: cover;
-    z-index: -2;
+    z-index: -3;
   }
+}
+
+.video-overlay {
+  position: absolute;
+  height: calc(100% - 100vh);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.8;
+  background-color: #000000;
+  z-index: 0;
 }
 
 .divider {
