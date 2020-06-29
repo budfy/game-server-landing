@@ -4,8 +4,8 @@ $(function () {
     $(tab).fadeIn(500);
     $(tab).siblings().fadeOut();
     $('html,body').stop().animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    }, 260);
+      scrollTop: ($($(this).attr('href')).offset().top - 110),
+    }, 700);
     e.preventDefault();
   })
 });

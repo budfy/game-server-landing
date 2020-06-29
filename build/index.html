@@ -8,6 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Julee&family=Notable&family=Noto+Sans:wght@700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="images/videoplayback.mp4" as="video">
   <link rel="stylesheet" href="css/libs.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
   <title>L2Pts.Com</title>
@@ -23,7 +24,7 @@
       <span class="header__online-counter">1450</span>
       <div class="header__button-wrapper button-wrapper flex">
         <a href="#" class="header__btn yellow-btn btn--s">Создать аккаунт</a>
-        <a href="#" class="header__btn yellow-btn btn--s">Форум</a>
+        <a href="#" class="header__btn yellow-btn yellow-btn--transparent btn--s">Форум</a>
         <a href="#" class="header__btn yellow-btn btn--s">Войти в аккаунт</a>
       </div>
     </div>
@@ -32,10 +33,12 @@
   <!-- WRITE CODE HERE -->
   <main class="main">
     <div class="video-bg">
-      <iframe width="100%" height="100%"
-        src="https://www.youtube-nocookie.com/embed/M2LWxUMBU0A?controls=0&autoplay=1&amp;loop=1&amp;&amp;playlist=M2LWxUMBU0A"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <img src="images/bg.jpg" alt="" class="video-bg__image">
+      <video class="video-bg__video" autoplay="1" loop="1" muted="1" controls="0">
+        <!-- <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm"> -->
+        <source src="images/videoplayback.mp4" type="video/mp4">
+        Your browser doesn't support HTML5 video tag.
+      </video>
     </div>
     <section class="top" id="top">
       <div class="container container--72">
@@ -55,12 +58,12 @@
         <p class="top__open-date">Открытие сервера 24 июля</p>
         <div class="top__buttons-wrapper flex">
           <a href="#" class="top__button yellow-btn btn--l">Скачать файлы</a>
-          <a href="#" class="top__button yellow-btn btn--l">Описание сервера</a>
+          <a href="#" class="top__button yellow-btn yellow-btn--transparent btn--l">Описание сервера</a>
           <a href="#" class="top__button yellow-btn btn--l">Игровая биржа</a>
         </div>
         <div class="top__switchers-wrapper flex">
           <a href="#description" class="top__tab-switcher" data-tab="#about">О сервере</a>
-          <a href="#description" class="top__tab-switcher top__tab-switcher--olymp" data-tab="#olymp">Олимпиада</a>
+          <a href="#description" class="top__tab-switcher" data-tab="#olymp">Олимпиада</a>
           <a href="#description" class="top__tab-switcher" data-tab="#store">Игровой магазин</a>
           <a href="#description" class="top__tab-switcher" data-tab="#epic">Эпики</a>
           <a href="#description" class="top__tab-switcher" data-tab="#info">Информация</a>
@@ -88,7 +91,7 @@
               <li class="about__list-item">Qiwi Wallet</li>
               <li class="about__list-item">Webmoney Wallet</li>
             </ul>
-            <img src="images/image-2.jpg" alt="Игровой процесс Lineage-2" class="about__image">
+            <img src="images/2.gif" alt="Игровой процесс Lineage-2" class="about__image">
           </div>
         </div>
       </div>
@@ -264,7 +267,7 @@
             это бесполезно. Все и так работает, зачем что-то менять? А возможность изменять яву - это три месяца самому
             фиксить баги ядра, чтобы потом иметь возможность какую-то ерунду изменить, и для этого надо уметь
             программировать на яве, чтобы не сломать всю систему. Опыт подсказыва</p>
-          <img src="images/2.gif" alt="" class="myths__image">
+          <img src="images/image-3.jpg" alt="PTS или JAVA" class="myths__image">
         </div>
       </div>
       <div class="container container--p45">
@@ -299,10 +302,10 @@
       </div>
     </section>
     <section class="privilege">
-      <div class="container container--p120">
+      <div class="container container--p45">
         <div class="privilegie__inner flex">
           <div class="privilegie__col col flex">
-            <img src="images/3.gif" alt="Привилегии анимация" class="privilegie__image">
+            <img src="images/geralt_inv.png" alt="Привилегии анимация" class="privilegie__image">
           </div>
           <div class="privilegie__col col flex">
             <h3 class="privilegie__title"><img src="images/kabuto.png" alt="Кабуто" class="privilegie__title-image">ВЫ

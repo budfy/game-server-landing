@@ -106,16 +106,28 @@ input:focus {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  color: var(--green-1);
   border-color: var(--green-1);
   transition: all ease-in-out .26s;
   text-align: center;
+  color: var(--green-1);
 
   &:hover {
+    color: var(--yellow-2);
     background-color: var(--yellow-1);
-    color: #ffffff;
+  }
+
+  &.yellow-btn--transparent {
+    background-color: var(--yellow-1);
+    text-align: center;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--yellow-2);
+      //color: var(--green-1);
+    }
   }
 }
+
 
 .green-btn {
   font-family: "Roboto Condensed";
@@ -149,20 +161,20 @@ input:focus {
   }
 }
 
-.yellow-btn {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  color: var(--green-1);
-  border-color: var(--green-1);
-  transition: all ease-in-out .26s;
-  text-align: center;
+// .yellow-btn {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: normal;
+//   color: var(--green-1);
+//   border-color: var(--green-1);
+//   transition: all ease-in-out .26s;
+//   text-align: center;
 
-  &:hover {
-    background-color: var(--yellow-1);
-    color: #ffffff;
-  }
-}
+//   &:hover {
+//     background-color: var(--yellow-1);
+//     color: #ffffff;
+//   }
+// }
 
 .video-bg {
   position: fixed;
@@ -172,6 +184,27 @@ input:focus {
   z-index: -1;
   left: 50%;
   transform: translate(-50%, -5%);
+
+  &__image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  &__video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+  }
 }
 
 .divider {
