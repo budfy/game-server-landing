@@ -155,15 +155,28 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: var(--green-3);
+    color: #ffffff;
     transition: all ease-in-out .26s;
     position: relative;
     width: 240px;
     min-width: unset;
     padding: 5px 15px;
+    border: 1px solid transparent;
 
     &:hover {
-      color: var(--yellow-1);
+      background-color: var(--yellow-2);
+      color: #000000;
+    }
+
+    &--yellow.yellow-btn.top__button {
+      border: 1px solid #000000;
+      color: #000000;
+      background: var(--yellow-1);
+
+      &:hover {
+        background-color: #000000;
+        color: #ffffff;
+      }
     }
   }
 }
@@ -613,6 +626,14 @@
     display: block;
     width: 100%;
     border: none;
+    cursor: pointer;
+    transition: all .26s;
+
+    &:hover {
+      font-weight: 400;
+      border: none;
+    }
+
   }
 }
 
