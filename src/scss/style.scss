@@ -93,6 +93,10 @@
     font-size: 72px;
     color: var(--yellow-2);
     margin: auto;
+
+    @media screen and (max-height: 767px) {
+      font-size: 40px;
+    }
   }
 
   &__subtitle-row {
@@ -111,6 +115,10 @@
     line-height: 49px;
     color: #B9B8A2;
     margin: auto;
+
+    @media screen and (max-height: 767px) {
+      line-height: 1.1;
+    }
   }
 
   &__buttons-wrapper {
@@ -164,14 +172,16 @@
 
 //STYLES-SECTION: about
 .about-inner {
-  display: grid;
-  display: grid;
-  grid-template-columns: 405px 900px;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px 43px;
+  align-items: stretch;
 }
 
 .about {
+
+  &__small-wrapper {
+    flex: 0 1 30%;
+    list-style: none;
+    counter-reset: about-list;
+  }
 
   &__text {
     padding: 40px 45px;
@@ -182,7 +192,6 @@
     color: var(--yellow-2);
 
     &--small {
-      grid-column: 1;
       background: rgba(8, 29, 54, 0.9);
       border-radius: 0px 0px 20px 20px;
       font-family: Open Sans;
@@ -190,7 +199,24 @@
       line-height: 20px;
       position: relative;
 
+      &+& {
+        margin-top: 16px;
+      }
+
+      &::before {
+        counter-increment: about-list;
+        content: counter(about-list);
+        font-family: Open Sans;
+        font-size: 17px;
+        line-height: 20px;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
       &::after {
+        flex: 2 1 50%;
         content: "";
         position: absolute;
         width: 95%;
@@ -203,8 +229,6 @@
     }
 
     &--big {
-      grid-column: 2;
-      grid-row: 1/4;
       height: 100%;
       padding: 30px 0 0 0;
       text-align: center;
