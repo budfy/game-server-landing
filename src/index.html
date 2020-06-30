@@ -33,60 +33,25 @@
           </h2>
           <p class="top__open-date">Открытие сервера 24 июля</p>
           <div class="top__buttons-wrapper flex">
-            <a href="#" class="top__button yellow-btn btn--l">Скачать файлы</a>
-            <a href="#" class="top__button yellow-btn yellow-btn--transparent btn--l">Описание сервера</a>
-            <a href="#" class="top__button yellow-btn btn--l">Игровая биржа</a>
+            <a href="#download" class="top__button yellow-btn yellow-btn--transparent btn--l">Скачать файлы</a>
+            <a href="#about-section" class="top__button yellow-btn btn--l">Описание сервера</a>
+            <a href="#" class="top__button yellow-btn yellow-btn--transparent btn--l">Игровая биржа</a>
           </div>
           <div class="top__switchers-wrapper flex">
-            <a href="#description" class="top__tab-switcher" data-tab="#about">О сервере</a>
-            <a href="#description" class="top__tab-switcher" data-tab="#olymp">Олимпиада</a>
-            <a href="#description" class="top__tab-switcher" data-tab="#store">Игровой магазин</a>
-            <a href="#description" class="top__tab-switcher" data-tab="#epic">Эпики</a>
-            <a href="#description" class="top__tab-switcher" data-tab="#info">Информация</a>
+            <a href="#description" class="top__tab-switcher yellow-btn yellow-btn--transparent btn--s"
+              data-tab="#about">О сервере</a>
+            <a href="#description" class="top__tab-switcher yellow-btn yellow-btn--transparent btn--s"
+              data-tab="#olymp">Олимпиада</a>
+            <a href="#description" class="top__tab-switcher top__button yellow-btn btn--s" data-tab="#store">Игровой
+              магазин</a>
+            <a href="#description" class="top__tab-switcher yellow-btn yellow-btn--transparent btn--s"
+              data-tab="#epic">Эпики</a>
+            <a href="#description" class="top__tab-switcher yellow-btn yellow-btn--transparent btn--s"
+              data-tab="#info">Информация</a>
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="container container--p26">
-          <div class=" about-inner">
-            <p class="about__text about__text--small">Игровая Биржа с выводом реальных денег прямо на счет личного
-              Qiwi/Webmoney
-            </p>
-            <p class="about__text about__text--small">PTS сборка с собственными наработками, такими как GM Shop, Alt+B
-              buff,
-              Aвтолут\АЦП</p>
-            <p class="about__text about__text--small">На проект были приглашены лучшие специалисты из всех известных в
-              сфере L2</p>
-            <div class="about__text about__text--big flex">
-              <p class="about__descr">
-                Больше никаких авантюр, мы берем под контроль весь процесc
-              </p>
-              <ul class="about__list">
-                <li class="about__list-item">5% комиссия</li>
-                <li class="about__list-item">3%комиссия</li>
-                <li class="about__list-item">Qiwi Wallet</li>
-                <li class="about__list-item">Webmoney Wallet</li>
-              </ul>
-              <img src="images/2.gif" alt="Игровой процесс Lineage-2" class="about__image">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="download divider">
-        <div class="container container--p78">
-          <div class="download__inner flex">
-            <a href="#" class="download__btn btn--m green-btn">Установить клиент </a>
-            <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
-            <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
-            <a href="#" class="download__btn btn--m green-btn">Установить апдейтер </a>
-            <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
-            <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
-            <a href="#" class="download__btn btn--m green-btn">Установить патч </a>
-            <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
-            <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
-          </div>
-        </div>
-      </section>
+
       <section class="description divider" id="description">
         <div class="container container--p45">
           <div class="description__inner flex">
@@ -231,15 +196,79 @@
           </div>
         </div>
       </section>
+
+      <section class="download divider" id="download">
+        <div class="container container--p78">
+          <div class="download__inner flex">
+
+            <div class="download__col col flex">
+              <form action="" class="registration__form">
+                <h3 class="registration__form-title">Регистрация аккаунта</h3>
+                <label for="email" class="registration__form-label registration__form-label--white">
+                  <input type="email" placeholder="Электронная почта@.com" required name="Электронная почта" id="email">
+                </label>
+                <label for="prefix" class="registration__form-label">
+                  <input type="text" required placeholder="Префикс №1" name="Префикс" id="prefix">
+                  <button type="button" class="registration__label-button">Сгенерировать</button>
+                </label>
+                <label for="login" class="registration__form-label">
+                  <input type="text" placeholder="Логин" required name="Логин" id="login">
+                </label>
+                <label for="password" class="registration__form-label registration__form-label--white">
+                  <input type="password" placeholder="Пароль" required name="Пароль" id="password">
+                </label>
+                <label for="pass-repeat" class="registration__form-label">
+                  <input type="password" placeholder="Повторить пароль" required name="Повторить пароль"
+                    id="pass-repeat">
+                </label>
+                <button type="submit" class="registration__form-button yellow-btn btn--s">Регистрация</button>
+              </form>
+            </div>
+            <div class="download__col col flex">
+              <a href="#" class="download__btn btn--m green-btn">Установить апдейтер </a>
+              <a href="#" class="download__btn btn--m green-btn">Установить апдейтер </a>
+              <a href="#" class="download__btn btn--m green-btn">Установить апдейтер </a>
+            </div>
+            <div class="download__col col flex">
+              <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
+              <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
+              <a href="#" class="download__btn btn--icon btn--m dark-green-btn">Скачать обновления</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about divider" id="about-section">
+        <div class="container container--p26">
+          <div class=" about-inner">
+            <p class="about__text about__text--small">Игровая Биржа с выводом реальных денег прямо на счет личного
+              Qiwi/Webmoney
+            </p>
+            <p class="about__text about__text--small">PTS сборка с собственными наработками, такими как GM Shop, Alt+B
+              buff,
+              Aвтолут\АЦП</p>
+            <p class="about__text about__text--small">На проект были приглашены лучшие специалисты из всех известных в
+              сфере L2</p>
+            <div class="about__text about__text--big flex">
+              <p class="about__descr">
+                Больше никаких авантюр, мы берем под контроль весь процесc
+              </p>
+              <ul class="about__list">
+                <li class="about__list-item">5% комиссия</li>
+                <li class="about__list-item">3%комиссия</li>
+                <li class="about__list-item">Qiwi Wallet</li>
+                <li class="about__list-item">Webmoney Wallet</li>
+              </ul>
+              <img src="images/2.gif" alt="Игровой процесс Lineage-2" class="about__image">
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="myths divider">
         <div class="container container--p45 flex myths--sub-section">
           <div class="myths__col col">
-            <img src="images/1.gif" alt="Бой в Lineage 2" class="myths__image">
-            <h4 class="myths__subtitle">Миф номер 2. У ПТС нет таких удобных решений как есть у Ява</h4>
-            <p class="myths__text">
-              Так же полная ерунда. НПЦ баффер с профилями, менеджер профессий, гмшоп, автолут, оффлайн шоп, и десятки
-              других удобств к которым все привыкли - есть, это все есть.
-            </p>
+            <img src="images/image-3.jpg" alt="PTS или JAVA" class="myths__image">
           </div>
           <div class="myths__col col">
             <h3 class="myths__title">PTS or Java ? Развеем мифы</h3>
@@ -255,14 +284,22 @@
               самому
               фиксить баги ядра, чтобы потом иметь возможность какую-то ерунду изменить, и для этого надо уметь
               программировать на яве, чтобы не сломать всю систему. Опыт подсказыва</p>
-            <img src="images/image-3.jpg" alt="PTS или JAVA" class="myths__image">
+
           </div>
+        </div>
+        <div class="container container--p45 myths--sub-section">
+          <h4 class="myths__subtitle">Миф номер 2. У ПТС нет таких удобных решений как есть у Ява</h4>
+          <p class="myths__text">
+            Так же полная ерунда. НПЦ баффер с профилями, менеджер профессий, гмшоп, автолут, оффлайн шоп, и
+            десятки
+            других удобств к которым все привыкли - есть, это все есть.
+          </p>
         </div>
         <div class="container container--p45">
           <h3 class="myths__title">Разберемся почему игроки любят и не любят PTS </h3>
         </div>
-        <div class="container container--p45 flex">
-          <div class="myths__col col">
+        <div class="container container--p45">
+          <div class="myths__col myths__col--list col">
             <h4 class="myths__subtitle myths__subtitle--bold"> Плюсы</h4>
             <ul class="myths__list">
               <li class="myths__list-item">Приятный геймплей, обработчик работает намного качественее и точнее Java,
@@ -276,7 +313,7 @@
                 выходные на осадах всему клану</li>
             </ul>
           </div>
-          <div class="myths__col col">
+          <div class="myths__col myths__col--list col">
             <h4 class="myths__subtitle myths__subtitle--bold"> Минусы</h4>
             <ul class="myths__list">
               <li class="myths__list-item">Меньшее разнообразия гибкостей. Действительно, на Java проще сделать автоатт,
@@ -311,13 +348,15 @@
                 после регистрации аккаунта в форме .</p>
             </div>
             <div class="privilegie__col col flex">
-              <img src="images/geralt_inv.png" alt="Привилегии анимация" class="privilegie__image">
+              <video src="images/videoplayback.mp4" class="privilegie__image" autoplay loop muted>
+                <img src="images/geralt_inv.png" alt="Привилегии анимация">
+              </video>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="privilege">
+      <section class="privilege divider">
         <div class="container container--p45">
           <div class="privilegie__inner flex">
             <div class="privilegie__col col flex">
@@ -338,47 +377,26 @@
                 после регистрации аккаунта в форме .</p>
             </div>
             <div class="privilegie__col col flex">
-              <img src="images/geralt_inv.png" alt="Привилегии анимация" class="privilegie__image">
+              <video src="images/videoplayback.mp4" class="privilegie__image" autoplay loop muted>
+                <img src="images/geralt_inv.png" alt="Привилегии анимация">
+              </video>
             </div>
           </div>
         </div>
       </section>
 
       <section class="registration">
-        <div class="container container--p85">
+        <div class="container container--p45">
           <div class="registration__inner flex">
             <div class="registration__col col">
               <div class="registration__left">
 
               </div>
             </div>
-
             <div class="registration__col col">
-              <form action="" class="registration__form">
-                <h3 class="registration__form-title">Регистрация аккаунта</h3>
-                <label for="rules" class="registration__form-label">
-                  <input type="checkbox" required name="Правила" id="rules" class="registration__checkbox">
-                  <span class="registration__checkbox-label">Знаю правила пользования сервером</span>
-                </label>
-                <label for="prefix" class="registration__form-label">
-                  <input type="text" required placeholder="Префикс №1" name="Префикс" id="prefix">
-                  <button type="button" class="registration__label-button">Сгенерировать</button>
-                </label>
-                <label for="email" class="registration__form-label">
-                  <input type="email" placeholder="Электронная почта@.com" required name="Электронная почта" id="email">
-                </label>
-                <label for="login" class="registration__form-label">
-                  <input type="text" placeholder="Логин" required name="Логин" id="login">
-                </label>
-                <label for="password" class="registration__form-label">
-                  <input type="password" placeholder="Пароль" required name="Пароль" id="password">
-                </label>
-                <label for="pass-repeat" class="registration__form-label">
-                  <input type="password" placeholder="Повторить пароль" required name="Повторить пароль"
-                    id="pass-repeat">
-                </label>
-                <button type="submit" class="registration__form-button yellow-btn btn--s">Регистрация</button>
-              </form>
+              <div class="registration__left">
+
+              </div>
             </div>
           </div>
         </div>

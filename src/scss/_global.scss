@@ -116,24 +116,30 @@ input:focus {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  border-color: var(--green-1);
+  background: rgba(222, 195, 40, 0.7);
+  border: 1px solid #E8D569;
   transition: all ease-in-out .26s;
   text-align: center;
-  color: var(--green-1);
+  color: #ffffff;
+
 
   &:hover {
-    color: var(--yellow-2);
-    background-color: var(--yellow-1);
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    color: #000000;
+    font-weight: 700;
   }
 
   &.yellow-btn--transparent {
-    background-color: var(--yellow-1);
-    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    color: #000000;
 
     &:hover {
-      background-color: transparent;
-      color: var(--yellow-2);
-      //color: var(--green-1);
+      background: rgba(222, 195, 40, 0.7);
+      border: 1px solid #E8D569;
+      color: #ffffff;
+      font-weight: 700;
     }
   }
 }
@@ -151,6 +157,7 @@ input:focus {
   &:hover {
     background-color: var(--yellow-2);
     color: var(--green-2);
+    font-weight: 700;
   }
 }
 
@@ -158,15 +165,16 @@ input:focus {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: normal;
-  color: var(--yellow-2);
-  border-color: var(--grey-2);
-  background-color: var(--grey-2);
+  color: #ffffff;
+  border: none;
+  background-color: #2F78BD;
   transition: all ease-in-out .26s;
   text-align: center;
 
   &:hover {
     background-color: var(--yellow-2);
     color: var(--grey-2);
+    font-weight: 700;
   }
 }
 
